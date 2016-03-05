@@ -12,7 +12,7 @@ import Foundation
  *   Implementation of the DataManager abstraction, that manages a single section data structure, as an array
  */
 
-final class FlatArrayDataManager<T>: DataManager {
+public final class FlatArrayDataManager<T>: DataManager {
     private var data: [T]
     
     init(data: [T]) {
@@ -23,11 +23,11 @@ final class FlatArrayDataManager<T>: DataManager {
         self.init(data: [T]())
     }
     
-    func itemCount() -> Int {
+    public func itemCount() -> Int {
         return data.count
     }
     
-    func itemCount(section: Int) -> Int? {
+    public func itemCount(section: Int) -> Int? {
         guard section < 1 else {
             return nil
         }
@@ -35,15 +35,15 @@ final class FlatArrayDataManager<T>: DataManager {
         return itemCount()
     }
     
-    func item(indexPath: NSIndexPath) -> T {
+    public func item(indexPath: NSIndexPath) -> T {
         return data[indexPath.row]
     }
     
-    func append(newData: [T], toSection: Int) {
+    public func append(newData: [T], toSection: Int) {
         data.appendContentsOf(newData)
     }
-    
-    func update(item: T, indexPath: NSIndexPath) {
+
+    public func update(item: T, indexPath: NSIndexPath) {
         let index = indexPath.row
         guard index < data.count else {
             return
@@ -52,15 +52,15 @@ final class FlatArrayDataManager<T>: DataManager {
         data[index] = item
     }
     
-    func clear() {
+    public func clear() {
         data.removeAll(keepCapacity: false)
     }
     
-    func clear(section: Int) {
+    public func clear(section: Int) {
         clear()
     }
     
-    func sectionCount() -> Int {
+    public func sectionCount() -> Int {
         return 1
     }    
 }

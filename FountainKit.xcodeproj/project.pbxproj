@@ -15,6 +15,10 @@
 		D859FCB11C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */; };
 		D859FCB21C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */; };
 		D859FCB41C8AE6E700970B0A /* FatArrayDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */; };
+		D859FCB91C8AE8AB00970B0A /* DataSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB81C8AE8AB00970B0A /* DataSettable.swift */; };
+		D859FCBA1C8AE8AB00970B0A /* DataSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB81C8AE8AB00970B0A /* DataSettable.swift */; };
+		D859FCBC1C8AE96400970B0A /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCBB1C8AE96400970B0A /* TableViewDataSource.swift */; };
+		D859FCBD1C8AE96400970B0A /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCBB1C8AE96400970B0A /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,8 @@
 		D859FCAD1C8AE69100970B0A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Sources/DataManager.swift; sourceTree = SOURCE_ROOT; };
 		D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatArrayDataManager.swift; path = Sources/FlatArrayDataManager.swift; sourceTree = SOURCE_ROOT; };
 		D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FatArrayDataManagerTests.swift; path = Tests/FatArrayDataManagerTests.swift; sourceTree = SOURCE_ROOT; };
+		D859FCB81C8AE8AB00970B0A /* DataSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSettable.swift; path = Sources/DataSettable.swift; sourceTree = SOURCE_ROOT; };
+		D859FCBB1C8AE96400970B0A /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +93,11 @@
 		D859FC8A1C8AE37600970B0A /* FountainKit */ = {
 			isa = PBXGroup;
 			children = (
+				D859FCB61C8AE7AF00970B0A /* Cells */,
+				D859FCB51C8AE7A100970B0A /* Data */,
+				D859FCB71C8AE7B400970B0A /* DataSource */,
 				D859FC8B1C8AE37600970B0A /* FountainKit.h */,
 				D859FC8D1C8AE37600970B0A /* Info.plist */,
-				D859FCAD1C8AE69100970B0A /* DataManager.swift */,
-				D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */,
 			);
 			path = FountainKit;
 			sourceTree = "<group>";
@@ -102,6 +109,31 @@
 				D859FC991C8AE37600970B0A /* Info.plist */,
 			);
 			path = FountainKitTests;
+			sourceTree = "<group>";
+		};
+		D859FCB51C8AE7A100970B0A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D859FCAD1C8AE69100970B0A /* DataManager.swift */,
+				D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		D859FCB61C8AE7AF00970B0A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D859FCB81C8AE8AB00970B0A /* DataSettable.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D859FCB71C8AE7B400970B0A /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				D859FCBB1C8AE96400970B0A /* TableViewDataSource.swift */,
+			);
+			name = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D859FCB91C8AE8AB00970B0A /* DataSettable.swift in Sources */,
 				D859FCB11C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */,
+				D859FCBC1C8AE96400970B0A /* TableViewDataSource.swift in Sources */,
 				D859FCAE1C8AE69100970B0A /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D859FCBA1C8AE8AB00970B0A /* DataSettable.swift in Sources */,
 				D859FCB21C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */,
+				D859FCBD1C8AE96400970B0A /* TableViewDataSource.swift in Sources */,
 				D859FCAF1C8AE69100970B0A /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

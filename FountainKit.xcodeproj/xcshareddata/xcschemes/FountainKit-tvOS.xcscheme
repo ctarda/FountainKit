@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D859FCA21C8AE56800970B0A"
-               BuildableName = "FountainKit-tvOS.framework"
+               BuildableName = "FountainKit.framework"
                BlueprintName = "FountainKit-tvOS"
                ReferencedContainer = "container:FountainKit.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D859FCA21C8AE56800970B0A"
-            BuildableName = "FountainKit-tvOS.framework"
+            BuildableName = "FountainKit.framework"
             BlueprintName = "FountainKit-tvOS"
             ReferencedContainer = "container:FountainKit.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D859FCA21C8AE56800970B0A"
-            BuildableName = "FountainKit-tvOS.framework"
+            BuildableName = "FountainKit.framework"
             BlueprintName = "FountainKit-tvOS"
             ReferencedContainer = "container:FountainKit.xcodeproj">
          </BuildableReference>

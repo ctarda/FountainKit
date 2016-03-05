@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol DataManager {
+public protocol DataManager {
     typealias DataType
     
     func itemCount() -> Int
