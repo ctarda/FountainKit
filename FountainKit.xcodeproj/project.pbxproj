@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		D859FC8C1C8AE37600970B0A /* FountainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D859FC8B1C8AE37600970B0A /* FountainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D859FC931C8AE37600970B0A /* FountainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D859FC881C8AE37600970B0A /* FountainKit.framework */; };
-		D859FC981C8AE37600970B0A /* FountainKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FC971C8AE37600970B0A /* FountainKitTests.swift */; };
 		D859FCA61C8AE56800970B0A /* FountainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D859FC8B1C8AE37600970B0A /* FountainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D859FCAE1C8AE69100970B0A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCAD1C8AE69100970B0A /* DataManager.swift */; };
+		D859FCAF1C8AE69100970B0A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCAD1C8AE69100970B0A /* DataManager.swift */; };
+		D859FCB11C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */; };
+		D859FCB21C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */; };
+		D859FCB41C8AE6E700970B0A /* FatArrayDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,10 +32,12 @@
 		D859FC8B1C8AE37600970B0A /* FountainKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainKit.h; sourceTree = "<group>"; };
 		D859FC8D1C8AE37600970B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D859FC921C8AE37600970B0A /* FountainKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FountainKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D859FC971C8AE37600970B0A /* FountainKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FountainKitTests.swift; sourceTree = "<group>"; };
 		D859FC991C8AE37600970B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D859FCAB1C8AE56800970B0A /* FountainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FountainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FCAC1C8AE56800970B0A /* FountainKit-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FountainKit-iOS copy-Info.plist"; path = "/Users/ctarda/Subversion/FountainKit/FountainKit-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
+		D859FCAD1C8AE69100970B0A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Sources/DataManager.swift; sourceTree = SOURCE_ROOT; };
+		D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatArrayDataManager.swift; path = Sources/FlatArrayDataManager.swift; sourceTree = SOURCE_ROOT; };
+		D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FatArrayDataManagerTests.swift; path = Tests/FatArrayDataManagerTests.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,8 @@
 			children = (
 				D859FC8B1C8AE37600970B0A /* FountainKit.h */,
 				D859FC8D1C8AE37600970B0A /* Info.plist */,
+				D859FCAD1C8AE69100970B0A /* DataManager.swift */,
+				D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */,
 			);
 			path = FountainKit;
 			sourceTree = "<group>";
@@ -92,7 +100,7 @@
 		D859FC961C8AE37600970B0A /* FountainKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				D859FC971C8AE37600970B0A /* FountainKitTests.swift */,
+				D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */,
 				D859FC991C8AE37600970B0A /* Info.plist */,
 			);
 			path = FountainKitTests;
@@ -240,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D859FCB11C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */,
+				D859FCAE1C8AE69100970B0A /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D859FC981C8AE37600970B0A /* FountainKitTests.swift in Sources */,
+				D859FCB41C8AE6E700970B0A /* FatArrayDataManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D859FCB21C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */,
+				D859FCAF1C8AE69100970B0A /* DataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +373,7 @@
 		D859FC9D1C8AE37600970B0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -371,12 +384,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ctarda.FountainKit;
 				PRODUCT_NAME = FountainKit;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D859FC9E1C8AE37600970B0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -413,6 +428,7 @@
 		D859FCA91C8AE56800970B0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -424,6 +440,7 @@
 				PRODUCT_NAME = FountainKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -431,6 +448,7 @@
 		D859FCAA1C8AE56800970B0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
