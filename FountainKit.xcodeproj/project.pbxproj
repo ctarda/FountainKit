@@ -34,7 +34,6 @@
 		D859FC921C8AE37600970B0A /* FountainKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FountainKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FC991C8AE37600970B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D859FCAB1C8AE56800970B0A /* FountainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FountainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D859FCAC1C8AE56800970B0A /* FountainKit-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FountainKit-iOS copy-Info.plist"; path = "/Users/ctarda/Subversion/FountainKit/FountainKit-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		D859FCAD1C8AE69100970B0A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Sources/DataManager.swift; sourceTree = SOURCE_ROOT; };
 		D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatArrayDataManager.swift; path = Sources/FlatArrayDataManager.swift; sourceTree = SOURCE_ROOT; };
 		D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FatArrayDataManagerTests.swift; path = Tests/FatArrayDataManagerTests.swift; sourceTree = SOURCE_ROOT; };
@@ -72,7 +71,6 @@
 				D859FC8A1C8AE37600970B0A /* FountainKit */,
 				D859FC961C8AE37600970B0A /* FountainKitTests */,
 				D859FC891C8AE37600970B0A /* Products */,
-				D859FCAC1C8AE56800970B0A /* FountainKit-iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -433,7 +431,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "FountainKit-iOS copy-Info.plist";
+				INFOPLIST_FILE = FountainKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ctarda.FountainKit;
@@ -453,7 +451,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "FountainKit-iOS copy-Info.plist";
+				INFOPLIST_FILE = FountainKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ctarda.FountainKit;
