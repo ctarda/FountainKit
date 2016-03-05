@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D859FC871C8AE37600970B0A"
-               BuildableName = "FountainKit.framework"
-               BlueprintName = "FountainKit"
+               BlueprintIdentifier = "D859FCA21C8AE56800970B0A"
+               BuildableName = "FountainKit-tvOS.framework"
+               BlueprintName = "FountainKit-tvOS"
                ReferencedContainer = "container:FountainKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D859FC911C8AE37600970B0A"
-               BuildableName = "FountainKitTests.xctest"
-               BlueprintName = "FountainKitTests"
-               ReferencedContainer = "container:FountainKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D859FC871C8AE37600970B0A"
-            BuildableName = "FountainKit.framework"
-            BlueprintName = "FountainKit"
-            ReferencedContainer = "container:FountainKit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D859FC871C8AE37600970B0A"
-            BuildableName = "FountainKit.framework"
-            BlueprintName = "FountainKit"
+            BlueprintIdentifier = "D859FCA21C8AE56800970B0A"
+            BuildableName = "FountainKit-tvOS.framework"
+            BlueprintName = "FountainKit-tvOS"
             ReferencedContainer = "container:FountainKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D859FC871C8AE37600970B0A"
-            BuildableName = "FountainKit.framework"
-            BlueprintName = "FountainKit"
+            BlueprintIdentifier = "D859FCA21C8AE56800970B0A"
+            BuildableName = "FountainKit-tvOS.framework"
+            BlueprintName = "FountainKit-tvOS"
             ReferencedContainer = "container:FountainKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

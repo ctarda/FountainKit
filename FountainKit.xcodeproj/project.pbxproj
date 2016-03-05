@@ -10,6 +10,7 @@
 		D859FC8C1C8AE37600970B0A /* FountainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D859FC8B1C8AE37600970B0A /* FountainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D859FC931C8AE37600970B0A /* FountainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D859FC881C8AE37600970B0A /* FountainKit.framework */; };
 		D859FC981C8AE37600970B0A /* FountainKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FC971C8AE37600970B0A /* FountainKitTests.swift */; };
+		D859FCA61C8AE56800970B0A /* FountainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D859FC8B1C8AE37600970B0A /* FountainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,8 @@
 		D859FC921C8AE37600970B0A /* FountainKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FountainKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FC971C8AE37600970B0A /* FountainKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FountainKitTests.swift; sourceTree = "<group>"; };
 		D859FC991C8AE37600970B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D859FCAB1C8AE56800970B0A /* FountainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FountainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D859FCAC1C8AE56800970B0A /* FountainKit-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FountainKit-iOS copy-Info.plist"; path = "/Users/ctarda/Subversion/FountainKit/FountainKit-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D859FCA41C8AE56800970B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +66,7 @@
 				D859FC8A1C8AE37600970B0A /* FountainKit */,
 				D859FC961C8AE37600970B0A /* FountainKitTests */,
 				D859FC891C8AE37600970B0A /* Products */,
+				D859FCAC1C8AE56800970B0A /* FountainKit-iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +75,7 @@
 			children = (
 				D859FC881C8AE37600970B0A /* FountainKit.framework */,
 				D859FC921C8AE37600970B0A /* FountainKitTests.xctest */,
+				D859FCAB1C8AE56800970B0A /* FountainKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +109,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D859FCA51C8AE56800970B0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D859FCA61C8AE56800970B0A /* FountainKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D859FC871C8AE37600970B0A /* FountainKit */ = {
+		D859FC871C8AE37600970B0A /* FountainKit-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D859FC9C1C8AE37600970B0A /* Build configuration list for PBXNativeTarget "FountainKit" */;
+			buildConfigurationList = D859FC9C1C8AE37600970B0A /* Build configuration list for PBXNativeTarget "FountainKit-iOS" */;
 			buildPhases = (
 				D859FC831C8AE37600970B0A /* Sources */,
 				D859FC841C8AE37600970B0A /* Frameworks */,
@@ -113,7 +133,7 @@
 			);
 			dependencies = (
 			);
-			name = FountainKit;
+			name = "FountainKit-iOS";
 			productName = FountainKit;
 			productReference = D859FC881C8AE37600970B0A /* FountainKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -135,6 +155,24 @@
 			productName = FountainKitTests;
 			productReference = D859FC921C8AE37600970B0A /* FountainKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D859FCA21C8AE56800970B0A /* FountainKit-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D859FCA81C8AE56800970B0A /* Build configuration list for PBXNativeTarget "FountainKit-tvOS" */;
+			buildPhases = (
+				D859FCA31C8AE56800970B0A /* Sources */,
+				D859FCA41C8AE56800970B0A /* Frameworks */,
+				D859FCA51C8AE56800970B0A /* Headers */,
+				D859FCA71C8AE56800970B0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FountainKit-tvOS";
+			productName = FountainKit;
+			productReference = D859FCAB1C8AE56800970B0A /* FountainKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -166,8 +204,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D859FC871C8AE37600970B0A /* FountainKit */,
+				D859FC871C8AE37600970B0A /* FountainKit-iOS */,
 				D859FC911C8AE37600970B0A /* FountainKitTests */,
+				D859FCA21C8AE56800970B0A /* FountainKit-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +220,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D859FC901C8AE37600970B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D859FCA71C8AE56800970B0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,12 +251,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D859FCA31C8AE56800970B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		D859FC951C8AE37600970B0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D859FC871C8AE37600970B0A /* FountainKit */;
+			target = D859FC871C8AE37600970B0A /* FountainKit-iOS */;
 			targetProxy = D859FC941C8AE37600970B0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -316,7 +369,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ctarda.FountainKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FountainKit;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -332,7 +385,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ctarda.FountainKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FountainKit;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -357,6 +410,42 @@
 			};
 			name = Release;
 		};
+		D859FCA91C8AE56800970B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "FountainKit-iOS copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctarda.FountainKit;
+				PRODUCT_NAME = FountainKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		D859FCAA1C8AE56800970B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "FountainKit-iOS copy-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ctarda.FountainKit;
+				PRODUCT_NAME = FountainKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -369,7 +458,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D859FC9C1C8AE37600970B0A /* Build configuration list for PBXNativeTarget "FountainKit" */ = {
+		D859FC9C1C8AE37600970B0A /* Build configuration list for PBXNativeTarget "FountainKit-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D859FC9D1C8AE37600970B0A /* Debug */,
@@ -384,6 +473,15 @@
 				D859FCA11C8AE37600970B0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		D859FCA81C8AE56800970B0A /* Build configuration list for PBXNativeTarget "FountainKit-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D859FCA91C8AE56800970B0A /* Debug */,
+				D859FCAA1C8AE56800970B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
