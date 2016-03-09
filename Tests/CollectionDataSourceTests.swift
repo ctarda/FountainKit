@@ -38,6 +38,7 @@ class CollectionDataSourceTests: XCTestCase {
       data = FlatArrayDataManager(data: mockData)
       dataSource = CollectionViewDataSource(dataManager: data!, cellType: MockCell.self)
       collectionView.registerClass(MockCell.self, forCellWithReuseIdentifier: MockCell.cellReuseIdentifier())
+      collectionView.dataSource = dataSource
     }
     
     override func tearDown() {
@@ -46,9 +47,10 @@ class CollectionDataSourceTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDataSourcePopulatesCell() {
+      let cell = dataSource?.collectionView(collectionView, cellForItemAtIndexPath: NSIndexPath(forItem: 0, inSection: 0)) as? MockCell
+      
+      XCTAssertEqual(cell!.outlet1, mockData.first?.mockField1)
     }
     
     
