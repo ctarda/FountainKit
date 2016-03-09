@@ -27,7 +27,10 @@ public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: 
     
     public func tableView(tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-        return dataManager.sectionCount()
+          guard let itemCount = dataManager.itemCount(section) else {
+            return 0
+          }
+        return itemCount
     }
     
 }

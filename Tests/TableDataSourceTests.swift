@@ -48,5 +48,17 @@ class TableDataSourceTests: XCTestCase {
       let cell = dataSource.tableView(tableView, cellForRowAtIndexPath: NSIndexPath(forItem: 0, inSection: 0)) as? MockCell
       
       XCTAssertEqual(cell!.outlet1, mockData.first?.mockField1)
-    }      
+    }
+  
+  func testDataSourceReturnsCorrectDataCount() {
+    let mockData = [MockData(mockField1: "1_1", mockField2: "1_2"), MockData(mockField1: "2_1", mockField2: "2_2")]
+    let data = FlatArrayDataManager(data: mockData)
+    let dataSource = TableViewDataSource(dataManager: data, cellType: MockCell.self)
+    let tableView = UITableView()
+    tableView.registerClass(MockCell.self, forCellReuseIdentifier: "cell")
+    
+    let count = dataSource.tableView(tableView, numberOfRowsInSection: 0)
+    
+      XCTAssertEqual(count, mockData.count)
+  }
 }
