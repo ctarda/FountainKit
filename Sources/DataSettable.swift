@@ -11,7 +11,7 @@ public protocol DataSettable {
     var data: DataType? {get set}
 }
 
-extension DataSettable {
+public extension DataSettable {
   public static func cellReuseIdentifier() -> String {
     return String(self)
   }
