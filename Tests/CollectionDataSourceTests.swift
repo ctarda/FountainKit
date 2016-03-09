@@ -9,14 +9,40 @@
 import XCTest
 
 class CollectionDataSourceTests: XCTestCase {
+  private struct MockData {
+    let mockField1: String
+    let mockField2: String
+  }
+  
+  private class MockCell: UICollectionViewCell, DataSettable {
+    var outlet1: String?
+    var outlet2: String?
     
+    var data: MockData? {
+      didSet {
+        outlet1 = data?.mockField1
+        outlet2 = data?.mockField2
+      }
+    }
+  }
+  
+  private var dataSource: UICollectionViewDataSource?
+  private var data: FlatArrayDataManager<MockData>?
+  
+  private let mockData = [MockData(mockField1: "1_1", mockField2: "1_2"), MockData(mockField1: "2_1", mockField2: "2_2")]
+  private let collectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: UICollectionViewFlowLayout())
+  
+
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+      data = FlatArrayDataManager(data: mockData)
+      dataSource = CollectionViewDataSource(dataManager: data!, cellType: MockCell.self)
+      collectionView.registerClass(MockCell.self, forCellWithReuseIdentifier: MockCell.cellReuseIdentifier())
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+      dataSource = nil
+      data = nil
         super.tearDown()
     }
     
@@ -25,11 +51,5 @@ class CollectionDataSourceTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
     
 }
