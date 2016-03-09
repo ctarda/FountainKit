@@ -53,5 +53,9 @@ class CollectionDataSourceTests: XCTestCase {
       XCTAssertEqual(cell!.outlet1, mockData.first?.mockField1)
     }
     
+  func testDataSourceReturnsCorrectItemCount() {
+    let count = dataSource?.collectionView(collectionView, numberOfItemsInSection: 0)
     
+    XCTAssertEqual(count, mockData.count)
+  }
 }
