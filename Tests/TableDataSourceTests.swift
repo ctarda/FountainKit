@@ -8,24 +8,24 @@
 @testable import FountainKit
 import XCTest
 
-struct MockData {
-  let mockField1: String
-  let mockField2: String
-}
-
-class MockCell: UITableViewCell, DataSettable {
-  var outlet1: String?
-  var outlet2: String?
+class TableDataSourceTests: XCTestCase {
+  private struct MockData {
+    let mockField1: String
+    let mockField2: String
+  }
   
-  var data: MockData? {
-    didSet {
-      outlet1 = data?.mockField1
-      outlet2 = data?.mockField2
+  private class MockCell: UITableViewCell, DataSettable {
+    var outlet1: String?
+    var outlet2: String?
+    
+    var data: MockData? {
+      didSet {
+        outlet1 = data?.mockField1
+        outlet2 = data?.mockField2
+      }
     }
   }
-}
 
-class TableDataSourceTests: XCTestCase {
   private var dataSource: UITableViewDataSource?
   private var data: FlatArrayDataManager<MockData>?
   

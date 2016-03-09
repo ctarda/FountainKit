@@ -12,6 +12,7 @@
 		D818C51C1C9006430082F452 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818C51A1C9006430082F452 /* CollectionViewDataSource.swift */; };
 		D818C51E1C9006670082F452 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818C51D1C9006670082F452 /* TableViewDataSource.swift */; };
 		D818C51F1C9006670082F452 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818C51D1C9006670082F452 /* TableViewDataSource.swift */; };
+		D818C5211C900D960082F452 /* CollectionDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818C5201C900D960082F452 /* CollectionDataSourceTests.swift */; };
 		D859FC8C1C8AE37600970B0A /* FountainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D859FC8B1C8AE37600970B0A /* FountainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D859FC931C8AE37600970B0A /* FountainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D859FC881C8AE37600970B0A /* FountainKit.framework */; };
 		D859FCA61C8AE56800970B0A /* FountainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D859FC8B1C8AE37600970B0A /* FountainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +39,7 @@
 		D818C4DF1C8FE3690082F452 /* TableDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableDataSourceTests.swift; path = Tests/TableDataSourceTests.swift; sourceTree = SOURCE_ROOT; };
 		D818C51A1C9006430082F452 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewDataSource.swift; path = Sources/CollectionViewDataSource.swift; sourceTree = SOURCE_ROOT; };
 		D818C51D1C9006670082F452 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewDataSource.swift; path = Sources/TableViewDataSource.swift; sourceTree = SOURCE_ROOT; };
+		D818C5201C900D960082F452 /* CollectionDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionDataSourceTests.swift; path = Tests/CollectionDataSourceTests.swift; sourceTree = SOURCE_ROOT; };
 		D859FC881C8AE37600970B0A /* FountainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FountainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FC8B1C8AE37600970B0A /* FountainKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainKit.h; sourceTree = "<group>"; };
 		D859FC8D1C8AE37600970B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		D859FC961C8AE37600970B0A /* FountainKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				D818C5201C900D960082F452 /* CollectionDataSourceTests.swift */,
 				D818C4DF1C8FE3690082F452 /* TableDataSourceTests.swift */,
 				D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */,
 				D859FC991C8AE37600970B0A /* Info.plist */,
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D859FCB41C8AE6E700970B0A /* FatArrayDataManagerTests.swift in Sources */,
+				D818C5211C900D960082F452 /* CollectionDataSourceTests.swift in Sources */,
 				D818C4E01C8FE3690082F452 /* TableDataSourceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
