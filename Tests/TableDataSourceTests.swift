@@ -7,6 +7,24 @@
 //
 
 import XCTest
+@testable import FountainKit
+
+struct MockData {
+  let mockField1: String
+  let mockField2: String
+}
+
+class MockCell: UITableViewCell, DataSettable {
+  var outlet1: String?
+  var outlet2: String?
+  
+  var data: MockData? {
+    didSet {
+      outlet1 = data?.mockField1
+      outlet2 = data?.mockField2
+    }
+  }
+}
 
 class TableDataSourceTests: XCTestCase {
     
@@ -20,9 +38,16 @@ class TableDataSourceTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testDataSourcePopulatesCell() {
+      let mockData = [MockData(mockField1: "1_1", mockField2: "1_2"), MockData(mockField1: "2_1", mockField2: "2_2")]
+      let data = FlatArrayDataManager(data: mockData)
+      let dataSource = TableViewDataSource(dataManager: data, cellType: MockCell.self)
+      let tableView = UITableView()
+      tableView.registerClass(MockCell.self, forCellReuseIdentifier: "cell")
+      
+      let cell = dataSource.tableView(tableView, cellForRowAtIndexPath: NSIndexPath(forItem: 0, inSection: 0)) as? MockCell
+      
+      XCTAssertEqual(cell!.outlet1, mockData.first?.mockField1)
     }
     
     func testPerformanceExample() {

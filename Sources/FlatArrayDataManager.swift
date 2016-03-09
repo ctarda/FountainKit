@@ -13,6 +13,7 @@ import Foundation
  */
 
 public final class FlatArrayDataManager<T>: DataManager {
+    public typealias DataType = T
     private var data: [T]
     
     init(data: [T]) {
