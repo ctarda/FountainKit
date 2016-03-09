@@ -26,37 +26,34 @@ class MockCell: UITableViewCell, DataSettable {
 }
 
 class TableDataSourceTests: XCTestCase {
+  private var dataSource: UITableViewDataSource?
+  private var data: FlatArrayDataManager<MockData>?
+  
+  private let mockData = [MockData(mockField1: "1_1", mockField2: "1_2"), MockData(mockField1: "2_1", mockField2: "2_2")]
+  private let tableView = UITableView()
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+      data = FlatArrayDataManager(data: mockData)
+      dataSource = TableViewDataSource(dataManager: data!, cellType: MockCell.self)
+      tableView.registerClass(MockCell.self, forCellReuseIdentifier: MockCell.cellReuseIdentifier())
+      
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+      dataSource = nil
+      data = nil
         super.tearDown()
     }
     
     func testDataSourcePopulatesCell() {
-      let mockData = [MockData(mockField1: "1_1", mockField2: "1_2"), MockData(mockField1: "2_1", mockField2: "2_2")]
-      let data = FlatArrayDataManager(data: mockData)
-      let dataSource = TableViewDataSource(dataManager: data, cellType: MockCell.self)
-      let tableView = UITableView()
-      tableView.registerClass(MockCell.self, forCellReuseIdentifier: MockCell.cellReuseIdentifier())
-      
-      let cell = dataSource.tableView(tableView, cellForRowAtIndexPath: NSIndexPath(forItem: 0, inSection: 0)) as? MockCell
+      let cell = dataSource?.tableView(tableView, cellForRowAtIndexPath: NSIndexPath(forItem: 0, inSection: 0)) as? MockCell
       
       XCTAssertEqual(cell!.outlet1, mockData.first?.mockField1)
     }
   
   func testDataSourceReturnsCorrectDataCount() {
-    let mockData = [MockData(mockField1: "1_1", mockField2: "1_2"), MockData(mockField1: "2_1", mockField2: "2_2")]
-    let data = FlatArrayDataManager(data: mockData)
-    let dataSource = TableViewDataSource(dataManager: data, cellType: MockCell.self)
-    let tableView = UITableView()
-    tableView.registerClass(MockCell.self, forCellReuseIdentifier: MockCell.cellReuseIdentifier())
-    
-    let count = dataSource.tableView(tableView, numberOfRowsInSection: 0)
+    let count = dataSource?.tableView(tableView, numberOfRowsInSection: 0)
     
       XCTAssertEqual(count, mockData.count)
   }
