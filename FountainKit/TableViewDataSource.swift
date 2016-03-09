@@ -17,7 +17,7 @@ public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: 
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if var cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? U {
+        if var cell = tableView.dequeueReusableCellWithIdentifier("cell") as? U {
             let dataItem = dataManager.item(indexPath)
             cell.data = dataItem;
             return cell
