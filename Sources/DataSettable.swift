@@ -10,3 +10,9 @@ public protocol DataSettable {
     typealias DataType
     var data: DataType? {get set}
 }
+
+public extension DataSettable {
+  public static func cellReuseIdentifier() -> String {
+    return String(self)
+  }
+}
