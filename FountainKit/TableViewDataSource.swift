@@ -9,7 +9,6 @@
 import UIKit
 
 public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: UITableViewCell, T.DataType == U.DataType>: NSObject, UITableViewDataSource {
-  public typealias DataType = T
     private let dataManager: T
     
   init(dataManager: T, cellType: U.Type) {
