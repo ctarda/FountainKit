@@ -5,9 +5,8 @@
 //  Created by Cesar Tardaguila on 5/3/2016.
 //  Copyright © 2016 Cesar Tardaguila. All rights reserved.
 //
-import XCTest
 @testable import FountainKit
-
+import XCTest
 
 class FlatArrayDataManagerTests: XCTestCase {
     private struct Constants {
