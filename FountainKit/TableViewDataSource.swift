@@ -16,12 +16,12 @@ public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: 
     }
     
     public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if var cell = tableView.dequeueReusableCellWithIdentifier("cell") as? U {
+        if var cell = tableView.dequeueReusableCellWithIdentifier(U.cellReuseIdentifier()) as? U {
             let dataItem = dataManager.item(indexPath)
             cell.data = dataItem;
             return cell
         }
-        return U(style: .Default, reuseIdentifier: "cell")
+        return U(style: .Default, reuseIdentifier: U.cellReuseIdentifier())
     }
     
     public func tableView(tableView: UITableView,

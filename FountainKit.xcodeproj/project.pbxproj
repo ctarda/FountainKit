@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D818C4E01C8FE3690082F452 /* TableDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818C4DF1C8FE3690082F452 /* TableDataSourceTests.swift */; };
+		D818C4E31C8FF4390082F452 /* CellReusableIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818C4E21C8FF4390082F452 /* CellReusableIdentifiers.swift */; };
+		D818C4E41C8FF4390082F452 /* CellReusableIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D818C4E21C8FF4390082F452 /* CellReusableIdentifiers.swift */; };
 		D859FC8C1C8AE37600970B0A /* FountainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D859FC8B1C8AE37600970B0A /* FountainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D859FC931C8AE37600970B0A /* FountainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D859FC881C8AE37600970B0A /* FountainKit.framework */; };
 		D859FCA61C8AE56800970B0A /* FountainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D859FC8B1C8AE37600970B0A /* FountainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		D818C4DF1C8FE3690082F452 /* TableDataSourceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableDataSourceTests.swift; path = Tests/TableDataSourceTests.swift; sourceTree = SOURCE_ROOT; };
+		D818C4E21C8FF4390082F452 /* CellReusableIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CellReusableIdentifiers.swift; path = Sources/CellReusableIdentifiers.swift; sourceTree = SOURCE_ROOT; };
 		D859FC881C8AE37600970B0A /* FountainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FountainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FC8B1C8AE37600970B0A /* FountainKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FountainKit.h; sourceTree = "<group>"; };
 		D859FC8D1C8AE37600970B0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				D859FCB81C8AE8AB00970B0A /* DataSettable.swift */,
+				D818C4E21C8FF4390082F452 /* CellReusableIdentifiers.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -282,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D859FCB91C8AE8AB00970B0A /* DataSettable.swift in Sources */,
+				D818C4E31C8FF4390082F452 /* CellReusableIdentifiers.swift in Sources */,
 				D859FCB11C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */,
 				D859FCBC1C8AE96400970B0A /* TableViewDataSource.swift in Sources */,
 				D859FCAE1C8AE69100970B0A /* DataManager.swift in Sources */,
@@ -302,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D859FCBA1C8AE8AB00970B0A /* DataSettable.swift in Sources */,
+				D818C4E41C8FF4390082F452 /* CellReusableIdentifiers.swift in Sources */,
 				D859FCB21C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */,
 				D859FCBD1C8AE96400970B0A /* TableViewDataSource.swift in Sources */,
 				D859FCAF1C8AE69100970B0A /* DataManager.swift in Sources */,

@@ -43,7 +43,7 @@ class TableDataSourceTests: XCTestCase {
       let data = FlatArrayDataManager(data: mockData)
       let dataSource = TableViewDataSource(dataManager: data, cellType: MockCell.self)
       let tableView = UITableView()
-      tableView.registerClass(MockCell.self, forCellReuseIdentifier: "cell")
+      tableView.registerClass(MockCell.self, forCellReuseIdentifier: MockCell.cellReuseIdentifier())
       
       let cell = dataSource.tableView(tableView, cellForRowAtIndexPath: NSIndexPath(forItem: 0, inSection: 0)) as? MockCell
       
@@ -55,7 +55,7 @@ class TableDataSourceTests: XCTestCase {
     let data = FlatArrayDataManager(data: mockData)
     let dataSource = TableViewDataSource(dataManager: data, cellType: MockCell.self)
     let tableView = UITableView()
-    tableView.registerClass(MockCell.self, forCellReuseIdentifier: "cell")
+    tableView.registerClass(MockCell.self, forCellReuseIdentifier: MockCell.cellReuseIdentifier())
     
     let count = dataSource.tableView(tableView, numberOfRowsInSection: 0)
     
