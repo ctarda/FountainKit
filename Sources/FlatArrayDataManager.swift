@@ -42,7 +42,7 @@ public final class FlatArrayDataManager<T>: DataManager {
     public func append(newData: [T], toSection: Int) {
         data.appendContentsOf(newData)
     }
-
+    
     public func update(item: T, indexPath: NSIndexPath) {
         let index = indexPath.row
         guard index < data.count else {
@@ -62,5 +62,5 @@ public final class FlatArrayDataManager<T>: DataManager {
     
     public func sectionCount() -> Int {
         return 1
-    }    
+    }
 }

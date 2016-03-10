@@ -11,7 +11,7 @@ import UIKit
 public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: UITableViewCell, T.DataType == U.DataType>: NSObject, UITableViewDataSource {
     private let dataManager: T
     
-  init(dataManager: T, cellType: U.Type) {
+    init(dataManager: T, cellType: U.Type) {
         self.dataManager = dataManager
     }
     
@@ -26,10 +26,10 @@ public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: 
     
     public func tableView(tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
-          guard let itemCount = dataManager.itemCount(section) else {
-            return 0
-          }
-        return itemCount
+            guard let itemCount = dataManager.itemCount(section) else {
+                return 0
+            }
+            return itemCount
     }
     
 }

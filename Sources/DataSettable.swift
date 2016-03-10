@@ -12,7 +12,7 @@ public protocol DataSettable {
 }
 
 extension DataSettable {
-  public static func cellReuseIdentifier() -> String {
-    return String(self)
-  }
+    public static func cellReuseIdentifier() -> String {
+        return String(self)
+    }
 }
