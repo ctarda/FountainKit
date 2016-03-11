@@ -3,7 +3,7 @@
 # FountainKit
 ![FountainKit](http://ctarda.com/wp-content/uploads/2016/03/FullSizeRender-2.jpg)
 
-FountainKit is a lightweight framework to decrease coupling between view controllers and datasources
+FountainKit is a lightweight framework to decrease coupling between view controllers and datasources.
 
 FountainKit is still in the initial phase of development, and is not ready for production yet.
 
@@ -18,8 +18,6 @@ FountainKit is still in the initial phase of development, and is not ready for p
 ### CocoaPods
 
 ### Swift Package Manager
-
-### Manually
 
 ## Examples
 This repository contains a sample app that showcases how to implement a table view and a collectionview
