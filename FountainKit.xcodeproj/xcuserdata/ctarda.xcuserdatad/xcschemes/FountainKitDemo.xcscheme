@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D8EB79F41C8AF088009088DD"
+               BlueprintIdentifier = "D8D6D1C11C93F3D100BD3716"
                BuildableName = "FountainKitDemo.app"
                BlueprintName = "FountainKitDemo"
-               ReferencedContainer = "container:FountainKitDemo.xcodeproj">
+               ReferencedContainer = "container:FountainKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8EB79F41C8AF088009088DD"
+            BlueprintIdentifier = "D8D6D1C11C93F3D100BD3716"
             BuildableName = "FountainKitDemo.app"
             BlueprintName = "FountainKitDemo"
-            ReferencedContainer = "container:FountainKitDemo.xcodeproj">
+            ReferencedContainer = "container:FountainKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8EB79F41C8AF088009088DD"
+            BlueprintIdentifier = "D8D6D1C11C93F3D100BD3716"
             BuildableName = "FountainKitDemo.app"
             BlueprintName = "FountainKitDemo"
-            ReferencedContainer = "container:FountainKitDemo.xcodeproj">
+            ReferencedContainer = "container:FountainKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D8EB79F41C8AF088009088DD"
+            BlueprintIdentifier = "D8D6D1C11C93F3D100BD3716"
             BuildableName = "FountainKitDemo.app"
             BlueprintName = "FountainKitDemo"
-            ReferencedContainer = "container:FountainKitDemo.xcodeproj">
+            ReferencedContainer = "container:FountainKit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

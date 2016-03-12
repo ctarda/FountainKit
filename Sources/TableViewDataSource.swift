@@ -18,7 +18,7 @@ public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: 
      - parameter dataManager: An implementation of the DataManager protocol. In other words, the data collection that is going to populate this collectionview.
      - parameter cellType: The type of a UITableViewCell subclass that also implements the DataSettable protocol. This parameter is required to enforce that the generic data type that the first parameter handles is the same as the data type that can be passed to the cell
      */
-    init(dataManager: T, cellType: U.Type) {
+    public init(dataManager: T, cellType: U.Type) {
         self.dataManager = dataManager
     }
     
