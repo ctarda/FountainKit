@@ -80,3 +80,4 @@ In particular, it would be necessary to:
 - Add some more documentation.
 
 ## License
+FountainKit is released under the MIT license
