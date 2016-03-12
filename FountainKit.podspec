@@ -10,14 +10,13 @@ FountainKit aims to be simple to use, while maintaning a clean API.
 
 FountainKit builds as a framework, and therefore needs iOS 8.
                        DESC
-  s.homepage         = "https://github.com/ctarda/FountainKit"
+  s.homepage         = "https://github.com/ctarda/FountainKit.git"
   s.license          = { type: "MIT", file: "LICENSE" }
   s.author           = "Cesar Tardaguila"
   s.source           = { git: "https://github.com/ctarda/FountainKit.git", tag: "#{s.version}" }
   s.social_media_url = 'https://twitter.com/ctarda'
 
   s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.9"
   s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Sources/**/*.{swift,h}'
