@@ -20,14 +20,14 @@
 		D859FCAF1C8AE69100970B0A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCAD1C8AE69100970B0A /* DataManager.swift */; };
 		D859FCB11C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */; };
 		D859FCB21C8AE6BF00970B0A /* FlatArrayDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */; };
-		D859FCB41C8AE6E700970B0A /* FatArrayDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */; };
+		D859FCB41C8AE6E700970B0A /* FlatArrayDataManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB31C8AE6E700970B0A /* FlatArrayDataManagerTests.swift */; };
 		D859FCB91C8AE8AB00970B0A /* DataSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB81C8AE8AB00970B0A /* DataSettable.swift */; };
 		D859FCBA1C8AE8AB00970B0A /* DataSettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859FCB81C8AE8AB00970B0A /* DataSettable.swift */; };
 		D8D6D2091C93F53A00BD3716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6D2081C93F53A00BD3716 /* AppDelegate.swift */; };
-		D8D6D20B1C93F53A00BD3716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6D20A1C93F53A00BD3716 /* ViewController.swift */; };
+		D8D6D20B1C93F53A00BD3716 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6D20A1C93F53A00BD3716 /* MoviesViewController.swift */; };
 		D8D6D2101C93F53A00BD3716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8D6D20F1C93F53A00BD3716 /* Assets.xcassets */; };
 		D8D6D2131C93F53A00BD3716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8D6D2111C93F53A00BD3716 /* LaunchScreen.storyboard */; };
-		D8D6D2191C93F74D00BD3716 /* DemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6D2181C93F74D00BD3716 /* DemoTableViewCell.swift */; };
+		D8D6D2191C93F74D00BD3716 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6D2181C93F74D00BD3716 /* MovieCell.swift */; };
 		D8D6D21A1C93F78D00BD3716 /* FountainKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D859FC881C8AE37600970B0A /* FountainKit.framework */; };
 		D8D6D21C1C93F7D900BD3716 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D6D21B1C93F7D900BD3716 /* Movie.swift */; };
 /* End PBXBuildFile section */
@@ -55,15 +55,15 @@
 		D859FCAB1C8AE56800970B0A /* FountainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FountainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D859FCAD1C8AE69100970B0A /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Sources/DataManager.swift; sourceTree = SOURCE_ROOT; };
 		D859FCB01C8AE6BF00970B0A /* FlatArrayDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatArrayDataManager.swift; path = Sources/FlatArrayDataManager.swift; sourceTree = SOURCE_ROOT; };
-		D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FatArrayDataManagerTests.swift; path = Tests/FatArrayDataManagerTests.swift; sourceTree = SOURCE_ROOT; };
+		D859FCB31C8AE6E700970B0A /* FlatArrayDataManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlatArrayDataManagerTests.swift; path = Tests/FlatArrayDataManagerTests.swift; sourceTree = SOURCE_ROOT; };
 		D859FCB81C8AE8AB00970B0A /* DataSettable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataSettable.swift; path = Sources/DataSettable.swift; sourceTree = SOURCE_ROOT; };
 		D8D6D2061C93F53A00BD3716 /* FountainKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FountainKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8D6D2081C93F53A00BD3716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8D6D20A1C93F53A00BD3716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8D6D20A1C93F53A00BD3716 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		D8D6D20F1C93F53A00BD3716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8D6D2121C93F53A00BD3716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8D6D2141C93F53A00BD3716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8D6D2181C93F74D00BD3716 /* DemoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoTableViewCell.swift; sourceTree = "<group>"; };
+		D8D6D2181C93F74D00BD3716 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		D8D6D21B1C93F7D900BD3716 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,7 +139,7 @@
 			children = (
 				D818C5201C900D960082F452 /* CollectionDataSourceTests.swift */,
 				D818C4DF1C8FE3690082F452 /* TableDataSourceTests.swift */,
-				D859FCB31C8AE6E700970B0A /* FatArrayDataManagerTests.swift */,
+				D859FCB31C8AE6E700970B0A /* FlatArrayDataManagerTests.swift */,
 				D859FC991C8AE37600970B0A /* Info.plist */,
 			);
 			path = FountainKitTests;
@@ -175,11 +175,11 @@
 			isa = PBXGroup;
 			children = (
 				D8D6D2081C93F53A00BD3716 /* AppDelegate.swift */,
-				D8D6D20A1C93F53A00BD3716 /* ViewController.swift */,
+				D8D6D20A1C93F53A00BD3716 /* MoviesViewController.swift */,
 				D8D6D20F1C93F53A00BD3716 /* Assets.xcassets */,
 				D8D6D2111C93F53A00BD3716 /* LaunchScreen.storyboard */,
 				D8D6D2141C93F53A00BD3716 /* Info.plist */,
-				D8D6D2181C93F74D00BD3716 /* DemoTableViewCell.swift */,
+				D8D6D2181C93F74D00BD3716 /* MovieCell.swift */,
 				D8D6D21B1C93F7D900BD3716 /* Movie.swift */,
 			);
 			path = FountainKitDemo;
@@ -370,7 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D859FCB41C8AE6E700970B0A /* FatArrayDataManagerTests.swift in Sources */,
+				D859FCB41C8AE6E700970B0A /* FlatArrayDataManagerTests.swift in Sources */,
 				D818C5211C900D960082F452 /* CollectionDataSourceTests.swift in Sources */,
 				D818C4E01C8FE3690082F452 /* TableDataSourceTests.swift in Sources */,
 			);
@@ -392,9 +392,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8D6D2191C93F74D00BD3716 /* DemoTableViewCell.swift in Sources */,
+				D8D6D2191C93F74D00BD3716 /* MovieCell.swift in Sources */,
 				D8D6D21C1C93F7D900BD3716 /* Movie.swift in Sources */,
-				D8D6D20B1C93F53A00BD3716 /* ViewController.swift in Sources */,
+				D8D6D20B1C93F53A00BD3716 /* MoviesViewController.swift in Sources */,
 				D8D6D2091C93F53A00BD3716 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

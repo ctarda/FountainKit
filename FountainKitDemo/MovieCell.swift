@@ -8,7 +8,7 @@
 import UIKit
 import FountainKit
 
-final class DemoTableViewCell: UITableViewCell, DataSettable {
+final class MovieCell: UITableViewCell, DataSettable {
     var data: Movie? {
         didSet {
             textLabel?.text = data?.title
