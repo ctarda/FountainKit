@@ -28,10 +28,10 @@ DataType is the model object that will be provided to the cell.
 A view controller should only be responsible for creating a data source, providing it the necessary data and a cell type, and then set it as the dataSource of the tableview / collectionview it controls.
 
 ```swift
-private func initData() {
-	let data = [ Movie(title: "The Quiet Man", director: "John Ford"),
-		Movie(title: "The Third Man", director: "Carol Reed") ]
-        
+	private func initData() {
+		let data = [ Movie(title: "The Quiet Man", director: "John Ford"),
+			Movie(title: "The Third Man", director: "Carol Reed") ]        
+
 		let dataManager = FlatArrayDataManager(data: data)
 		dataSource = TableViewDataSource(dataManager: dataManager, cellType: MovieCell.self)
     }
@@ -68,7 +68,7 @@ let package = Package(
 )
 ```
 ## Examples
-This repository contains a sample app that showcases how to implement a table view. 
+This repository contains a sample app implementing a table view. 
 
 ## Contributing to FountainKit
 Contributions of any kind (bug reports, feature suggestions, new features) are more than welcome, and greatly appreciated.
@@ -78,3 +78,5 @@ In particular, it would be necessary to:
 - Add more implementations of the DataManager protocol, managing diferent data structures.
 - Improve the current sample application, adding a sample integration of a collectionview.
 - Add some more documentation.
+
+## License
