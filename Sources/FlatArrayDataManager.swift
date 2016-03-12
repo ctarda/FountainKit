@@ -3,13 +3,10 @@
 //  FountainKit
 //
 //  Created by Cesar Tardaguila on 5/3/2016.
-//  Copyright © 2016 Cesar Tardaguila. All rights reserved.
 //
 
-import Foundation
-
 /**
- *   Implementation of the DataManager abstraction, that manages a single section data structure, as an array
+ *   Implementation of the DataManager protocol, that manages a single section data structure, backed up by an array
  */
 
 public final class FlatArrayDataManager<T>: DataManager {

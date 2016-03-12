@@ -3,15 +3,21 @@
 //  FountainKit
 //
 //  Created by Cesar Tardaguila on 3/9/16.
-//  Copyright © 2016 Cesar Tardaguila. All rights reserved.
 //
 
 import UIKit
 
+/**
+    Minimal implementation of the UICollectionViewDataSource protocol. This class only implements the ethods required by the protocol. This class can be subclassed to implement more of the UICollectionViewDataSource methods
+*/
 public class CollectionViewDataSource<T, U where T: DataManager, U: DataSettable, U: UICollectionViewCell, T.DataType == U.DataType>: NSObject, UICollectionViewDataSource {
     
     private let dataManager: T
-    
+    /**
+     Designated initializer. 
+     - parameter dataManager: An implementation of the DataManager protocol. In other words, the data collection that is going to populate this collectionview.
+     - parameter cellType: The type of a UICollectionView subclass that also implements the DataSettable protocol. This parameter is required to enforce that the generic data type that the first parameter handles is the same as the data type that can be passed to the cell
+    */
     init(dataManager: T, cellType: U.Type) {
         self.dataManager = dataManager
     }
