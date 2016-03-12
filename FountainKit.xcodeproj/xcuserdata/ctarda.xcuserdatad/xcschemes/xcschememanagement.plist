@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>FountainKitDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -28,6 +33,26 @@
 			<true/>
 		</dict>
 		<key>D859FCA21C8AE56800970B0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8D6D1C11C93F3D100BD3716</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8D6D1D91C93F45500BD3716</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8D6D1EF1C93F4D200BD3716</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8D6D2051C93F53A00BD3716</key>
 		<dict>
 			<key>primary</key>
 			<true/>

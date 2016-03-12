@@ -12,11 +12,11 @@
 public final class FlatArrayDataManager<T>: DataManager {
     private var data: [T]
     
-    init(data: [T]) {
+    public init(data: [T]) {
         self.data = data
     }
     
-    convenience init() {
+    public convenience init() {
         self.init(data: [T]())
     }
     
