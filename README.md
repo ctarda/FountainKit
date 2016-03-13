@@ -8,7 +8,7 @@ FountainKit is a lightweight Swift framework that attempts to decrease coupling 
 ## The problem FountainKit tries to solve
 Keeping view controllers small and focused is hard. View controllers, in particular those that need to present data, tend to do too much, to have too many responsibilites.
 
-That makes those view controllers rigid, dificutl to change, and dificult to unit test.
+That makes those view controllers rigid, difficult to change, and dificult to unit test.
 
 ## The way FountainKit tries to solve the problem
 FountainKit is a lightweight framework that suggests a way to decouple datasources from view controllers, in a way that the datasources, the table view or collection view cells, and the view controllers can colaborate with each other and remain decoupled and testable.
@@ -76,6 +76,7 @@ Contributions of any kind (bug reports, feature suggestions, new features) are m
 In particular, it would be necessary to:
 
 - Add more implementations of the DataManager protocol, managing diferent data structures.
+- Expand to delegates!
 - Improve the current sample application, adding a sample integration of a collectionview.
 - Add some more documentation.
 
