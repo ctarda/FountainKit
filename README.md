@@ -68,7 +68,9 @@ let package = Package(
 )
 ```
 ## Examples
-This repository contains a sample app implementing a table view. 
+This repository contains a sample app implementing a table view.
+
+If you are interested in the rationale behind this framework, read this blog post:[http://ctarda.com/2016/03/introducing-fountainkit/](http://ctarda.com/2016/03/introducing-fountainkit/) 
 
 ## Contributing to FountainKit
 Contributions of any kind (bug reports, feature suggestions, new features) are more than welcome, and greatly appreciated.
