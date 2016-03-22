@@ -9,7 +9,7 @@
     This protocol should be implemented by table view and collection view cells.
 */
 public protocol DataSettable {
-    typealias DataType
+    associatedtype DataType
     var data: DataType? {get set}
 }
 

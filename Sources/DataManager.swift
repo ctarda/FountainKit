@@ -9,7 +9,7 @@
     Abstracts a strongly-typed data collection.
 */
 public protocol DataManager {
-    typealias DataType
+    associatedtype DataType
     
     /**
         Total number of items in the data collection
