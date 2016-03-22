@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FountainKit"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "FountainKit is a lightweight framework to decrease coupling between view controllers and datasources."
   s.description      = <<-DESC
 FountainKit is a lightweight framework to decrease coupling between view controllers and datasources.
