@@ -22,16 +22,16 @@ public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: 
         self.dataManager = dataManager
     }
     
-    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if var cell = tableView.dequeueReusableCellWithIdentifier(U.cellReuseIdentifier()) as? U {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if var cell = tableView.dequeueReusableCell(withIdentifier: U.cellReuseIdentifier()) as? U {
             let dataItem = dataManager.item(indexPath)
             cell.data = dataItem;
             return cell
         }
-        return U(style: .Default, reuseIdentifier: U.cellReuseIdentifier())
+        return U(style: .default, reuseIdentifier: U.cellReuseIdentifier())
     }
     
-    public func tableView(tableView: UITableView,
+    public func tableView(_ tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
             guard let itemCount = dataManager.itemCount(section) else {
                 return 0

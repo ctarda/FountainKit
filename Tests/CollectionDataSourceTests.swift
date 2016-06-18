@@ -30,14 +30,14 @@ class CollectionDataSourceTests: XCTestCase {
     private var data: FlatArrayDataManager<MockData>?
     
     private let mockData = [MockData(mockField1: "1_1", mockField2: "1_2"), MockData(mockField1: "2_1", mockField2: "2_2")]
-    private let collectionView = UICollectionView(frame: CGRectZero, collectionViewLayout: UICollectionViewFlowLayout())
+    private let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout())
     
     
     override func setUp() {
         super.setUp()
         data = FlatArrayDataManager(data: mockData)
         dataSource = CollectionViewDataSource(dataManager: data!, cellType: MockCell.self)
-        collectionView.registerClass(MockCell.self, forCellWithReuseIdentifier: MockCell.cellReuseIdentifier())
+        collectionView.register(MockCell.self, forCellWithReuseIdentifier: MockCell.cellReuseIdentifier())
         collectionView.dataSource = dataSource
     }
     
@@ -48,7 +48,7 @@ class CollectionDataSourceTests: XCTestCase {
     }
     
     func testDataSourcePopulatesCell() {
-        let cell = dataSource?.collectionView(collectionView, cellForItemAtIndexPath: NSIndexPath(forItem: 0, inSection: 0)) as? MockCell
+        let cell = dataSource?.collectionView(collectionView, cellForItemAt: IndexPath(item: 0, section: 0)) as? MockCell
         
         XCTAssertEqual(cell!.outlet1, mockData.first?.mockField1)
     }

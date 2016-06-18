@@ -38,7 +38,7 @@ class FlatArrayDataManagerTests: XCTestCase {
     }
     
     func testItemAtIndexReturnsTheProperItem() {
-        XCTAssertEqual(dataManager?.item(NSIndexPath(forRow: 0, inSection: 0)), Constants.mockData[0], "Item at index must return the proper value")
+        XCTAssertEqual(dataManager?.item(IndexPath(row: 0, section: 0)), Constants.mockData[0], "Item at index must return the proper value")
     }
     
     func testAddingDataReturnsProperCount() {
@@ -49,7 +49,7 @@ class FlatArrayDataManagerTests: XCTestCase {
     
     func testUpdateUpdatesItemAtIndex() {
         let newValue = "Yo, yo yo!"
-        let index = NSIndexPath(forRow: 0, inSection: 3)
+        let index = IndexPath(row: 0, section: 3)
         
         dataManager?.update(newValue, indexPath: index)
         

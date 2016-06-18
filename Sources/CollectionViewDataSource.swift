@@ -22,15 +22,15 @@ public class CollectionViewDataSource<T, U where T: DataManager, U: DataSettable
         self.dataManager = dataManager
     }
     
-    public func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         guard let itemCount = dataManager.itemCount(section) else {
             return 0
         }
         return itemCount
     }
     
-    public func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        if var cell = collectionView.dequeueReusableCellWithReuseIdentifier(U.cellReuseIdentifier(), forIndexPath: indexPath) as? U {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if var cell = collectionView.dequeueReusableCell(withReuseIdentifier: U.cellReuseIdentifier(), for: indexPath) as? U {
             let dataItem = dataManager.item(indexPath)
             cell.data = dataItem;
             return cell
