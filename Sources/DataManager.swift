@@ -21,7 +21,7 @@ public protocol DataManager {
         
         - parameter section: the section index
     */
-    func itemCount(section: Int) -> Int?
+    func itemCount(_ section: Int) -> Int?
     
     /**
         Number of sections
@@ -31,7 +31,7 @@ public protocol DataManager {
     /**
         Item at a given indexpath
     */
-    func item(indexPath: NSIndexPath) -> DataType
+    func item(_ indexPath: IndexPath) -> DataType
     
     /**
         Append new data to a given section
@@ -39,12 +39,12 @@ public protocol DataManager {
         - parameter newData: an array of new items
         - parameter toSection: the sections those items will be added to
     */
-    func append(newData: [DataType], toSection: Int)
+    func append(_ newData: [DataType], toSection: Int)
     
     /**
         Update an item at a given indexpath
     */
-    func update(item: DataType, indexPath: NSIndexPath)
+    func update(_ item: DataType, indexPath: IndexPath)
     
     /**
         Remove all the content of the underlying collection
@@ -56,5 +56,5 @@ public protocol DataManager {
      
         - parameter section: The section index
     */
-    func clear(section: Int)
+    func clear(_ section: Int)
 }

@@ -36,7 +36,7 @@ class TableDataSourceTests: XCTestCase {
         super.setUp()
         data = FlatArrayDataManager(data: mockData)
         dataSource = TableViewDataSource(dataManager: data!, cellType: MockCell.self)
-        tableView.registerClass(MockCell.self, forCellReuseIdentifier: MockCell.cellReuseIdentifier())
+        tableView.register(MockCell.self, forCellReuseIdentifier: MockCell.cellReuseIdentifier())
         
     }
     
@@ -47,7 +47,7 @@ class TableDataSourceTests: XCTestCase {
     }
     
     func testDataSourcePopulatesCell() {
-        let cell = dataSource?.tableView(tableView, cellForRowAtIndexPath: NSIndexPath(forItem: 0, inSection: 0)) as? MockCell
+        let cell = dataSource?.tableView(tableView, cellForRowAt: IndexPath(item: 0, section: 0)) as? MockCell
         
         XCTAssertEqual(cell!.outlet1, mockData.first?.mockField1)
     }

@@ -24,7 +24,7 @@ public final class FlatArrayDataManager<T>: DataManager {
         return data.count
     }
     
-    public func itemCount(section: Int) -> Int? {
+    public func itemCount(_ section: Int) -> Int? {
         guard section < 1 else {
             return nil
         }
@@ -32,16 +32,16 @@ public final class FlatArrayDataManager<T>: DataManager {
         return itemCount()
     }
     
-    public func item(indexPath: NSIndexPath) -> T {
-        return data[indexPath.row]
+    public func item(_ indexPath: IndexPath) -> T {
+        return data[(indexPath as NSIndexPath).row]
     }
     
-    public func append(newData: [T], toSection: Int) {
-        data.appendContentsOf(newData)
+    public func append(_ newData: [T], toSection: Int) {
+        data.append(contentsOf: newData)
     }
     
-    public func update(item: T, indexPath: NSIndexPath) {
-        let index = indexPath.row
+    public func update(_ item: T, indexPath: IndexPath) {
+        let index = (indexPath as NSIndexPath).row
         guard index < data.count else {
             return
         }
@@ -50,10 +50,10 @@ public final class FlatArrayDataManager<T>: DataManager {
     }
     
     public func clear() {
-        data.removeAll(keepCapacity: false)
+        data.removeAll(keepingCapacity: false)
     }
     
-    public func clear(section: Int) {
+    public func clear(_ section: Int) {
         clear()
     }
     
