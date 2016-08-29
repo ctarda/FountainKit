@@ -21,6 +21,6 @@ extension DataSettable {
         Returns the cell name as string, so the cell can be registered with table or collection views.
     */
     public static func cellReuseIdentifier() -> String {
-        return String(self)
+        return String(describing:self)
     }
 }
