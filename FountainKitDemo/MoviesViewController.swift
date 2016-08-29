@@ -10,7 +10,7 @@ import FountainKit
 
 class MoviesViewController: UITableViewController {
     
-    private var dataSource: TableViewDataSource<FlatArrayDataManager<Movie>, MovieCell>?
+    fileprivate var dataSource: TableViewDataSource<FlatArrayDataManager<Movie>, MovieCell>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class MoviesViewController: UITableViewController {
         initTableView()
     }
 
-    private func initData() {
+    fileprivate func initData() {
         let data = [ Movie(title: "The Quiet Man", director: "John Ford"),
                     Movie(title: "The Third Man", director: "Carol Reed") ]
         
@@ -26,8 +26,8 @@ class MoviesViewController: UITableViewController {
         dataSource = TableViewDataSource(dataManager: dataManager, cellType: MovieCell.self)
     }
     
-    private func initTableView() {
-        tableView.registerClass(MovieCell.self, forCellReuseIdentifier: MovieCell.cellReuseIdentifier())
+    fileprivate func initTableView() {
+        tableView.register(MovieCell.self, forCellReuseIdentifier: MovieCell.cellReuseIdentifier())
         tableView.dataSource = dataSource
     }
 }
