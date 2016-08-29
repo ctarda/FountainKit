@@ -10,7 +10,7 @@
  */
 
 public final class FlatArrayDataManager<T>: DataManager {
-    private var data: [T]
+    fileprivate var data: [T]
     
     public init(data: [T]) {
         self.data = data

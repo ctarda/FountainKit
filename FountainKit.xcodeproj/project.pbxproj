@@ -296,6 +296,9 @@
 						CreatedOnToolsVersion = 7.2.1;
 						LastSwiftMigration = 0800;
 					};
+					D859FCA21C8AE56800970B0A = {
+						LastSwiftMigration = 0800;
+					};
 					D8D6D2051C93F53A00BD3716 = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -587,6 +590,7 @@
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Debug;
@@ -606,6 +610,7 @@
 				PRODUCT_NAME = FountainKit;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 			};
 			name = Release;

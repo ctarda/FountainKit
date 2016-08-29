@@ -10,8 +10,8 @@ import UIKit
 /**
  Minimal implementation of the UITableViewDataSource protocol. This class only implements the ethods required by the protocol. This class can be subclassed to implement more of the UICollectionViewDataSource methods
  */
-public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: UITableViewCell, T.DataType == U.DataType>: NSObject, UITableViewDataSource {
-    private let dataManager: T
+open class TableViewDataSource<T, U>: NSObject, UITableViewDataSource where T: DataManager, U: DataSettable, U: UITableViewCell, T.DataType == U.DataType {
+    fileprivate let dataManager: T
     
     /**
      Designated initializer.
@@ -22,7 +22,7 @@ public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: 
         self.dataManager = dataManager
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if var cell = tableView.dequeueReusableCell(withIdentifier: U.cellReuseIdentifier()) as? U {
             let dataItem = dataManager.item(indexPath)
             cell.data = dataItem;
@@ -31,7 +31,7 @@ public class TableViewDataSource<T, U where T: DataManager, U: DataSettable, U: 
         return U(style: .default, reuseIdentifier: U.cellReuseIdentifier())
     }
     
-    public func tableView(_ tableView: UITableView,
+    open func tableView(_ tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
             guard let itemCount = dataManager.itemCount(section) else {
                 return 0
